@@ -43,7 +43,7 @@ Be able to implement real-time IoT web monitoring and remote interaction, demons
 ----
 
 Bill of Materials
-=================
+-----------------
 
 .. image:: _static/1-1/1.bom.jpg
    :width: 1000
