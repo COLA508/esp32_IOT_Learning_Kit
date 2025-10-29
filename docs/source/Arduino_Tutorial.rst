@@ -379,15 +379,14 @@ Click **Tools → Board → esp32** to check whether an ESP32 development board 
 - They encapsulate commonly used functions and hardware driver code, allowing users to simply call ready-made functions without writing complex low-level code from scratch.  
 - For example, the **LiquidCrystal_I2C** library allows users to drive an LCD1602 display with just a few lines of code.  
 - A wealth of community-provided third-party libraries also allows for quick integration with various sensors and modules.  
-These library functions make it easy to interact with hardware and expand Arduino's functionality.
+- These library functions make it easy to interact with hardware and expand Arduino's functionality.
 
 ----
 
 Download Libraries
 ~~~~~~~~~~~~~~~~~~
 
-1. We've compiled all the libraries necessary to run this suite. Please click the link below to download them and follow the instructions to complete the installation:  
-   `Download libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
+1. We've compiled all the libraries necessary to run this suite. Please click the link below to download them and follow the instructions to complete the installation:  `Download libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
 
 2. Unzip the downloaded library file. The library file storage path is **Code and Libraries** → **Libraries** . Open it and confirm that it contains the library file shown in the figure below. 
 
