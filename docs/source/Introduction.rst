@@ -46,6 +46,7 @@ Bill of Materials
 =================
 
 .. image:: _static/1-1/1.bom.jpg
+   :width: 1000
    :align: center
 
 .. list-table:: Bill of Materials
@@ -117,5 +118,10 @@ Bill of Materials
      - 4P Cable
      - x3
 
+Upon receiving the kit, please first check all components against the above bill of materials. If you find any missing or damaged items, please contact our technical support team immediately.
+
 ----
 
+**Next, we will delve into the core content of the course and help you gradually understand the relevant concepts and master the operation procedures.**
+
+----
