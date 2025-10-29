@@ -46,9 +46,7 @@ Bill of Materials
 =================
 
 .. image:: _static/1-1/1.bom.jpg
-   :width: 800
    :align: center
-
 
 .. list-table:: Bill of Materials
    :header-rows: 1
@@ -118,3 +116,6 @@ Bill of Materials
    * - 20
      - 4P Cable
      - x3
+
+----
+
