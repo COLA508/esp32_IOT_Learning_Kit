@@ -311,9 +311,6 @@ Download the  ESP32 Core Package
 
 3. Find the core package titled *esp32 by Espressif Systems*, select version **3.2.0** from the drop-down menu, and click **Install** to download and install it.  
 
-.. raw:: html
-
-   <div style="margin-top: 30px;"></div>
 
 .. image:: _static/22.ESP32_CORE.png
    :width: 600
