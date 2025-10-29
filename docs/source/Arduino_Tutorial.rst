@@ -226,14 +226,25 @@ Add Additional Boards Manager URL
    :width: 600
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 .. image:: _static/19.URL.png
    :width: 600
    :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. image:: _static/20.URL.png
    :width: 600
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. admonition:: Precaution
    :class: note
@@ -251,33 +262,68 @@ Download the  ESP32 Core Package
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 2. Enter **ESP32** in the search box and press Enter.  
 
 3. Find the core package titled *esp32 by Espressif Systems*, select version **3.2.0** from the drop-down menu, and click **Install** to download and install it.  
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
    .. image:: _static/22.ESP32_CORE.png
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 4. Please wait for the download progress bar in the lower right corner to complete.  
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
    .. image:: _static/23.ESP32_CORE.png
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 5. When the download is complete, the message **Successfully installed platform esp32:3.2.0** will be displayed.  
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
    .. image:: _static/24.ESP32_CORE.png
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 6. Check if the installation is successful:  
 Click **Tools → Board → esp32** to check whether an ESP32 development board is available for selection.  
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
    .. image:: _static/25.ESP32_CORE.png
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. admonition:: Precaution
    :class: note
@@ -293,11 +339,11 @@ Click **Tools → Board → esp32** to check whether an ESP32 development board 
 
 - Arduino libraries can significantly simplify the development process.  
 - They encapsulate commonly used functions and hardware driver code, allowing users to simply call ready-made functions without writing complex low-level code from scratch.  
-
 - For example, the **LiquidCrystal_I2C** library allows users to drive an LCD1602 display with just a few lines of code.  
 - A wealth of community-provided third-party libraries also allows for quick integration with various sensors and modules.  
 These library functions make it easy to interact with hardware and expand Arduino's functionality.
 
+----
 
 Download Libraries
 ~~~~~~~~~~~~~~~~~~
@@ -306,6 +352,10 @@ Download Libraries
    `Download libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
 
 2. Unzip the downloaded library file. The library file storage path is **Code and Libraries** → **Libraries** . Open it and confirm that it contains the library file shown in the figure below. 
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. image:: _static/26.lib.png
    :width: 700
@@ -318,29 +368,51 @@ Import Libraries
 
 1. Open the Arduino IDE and click **Sketch → Include Library → Add .ZIP Library**.  
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
    .. image:: _static/27.lib.png
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 2. In the pop-up window, locate the folder of the library you just downloaded and unzipped, select it, and click **Open** to complete the import.  
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
    .. image:: _static/28.lib.png
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 3. If the library file is imported successfully, the Arduino IDE output window will display the message: *Library installed*.  
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
    .. image:: _static/31.lib.png
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. admonition:: Precaution
    :class: note
 
    - Arduino IDE does not support importing multiple libraries at once; you must import one library at a time.  
    - If a library file already exists, a prompt will appear asking whether to overwrite it. It is recommended to confirm overwrite to avoid program errors caused by different library versions.  
-
 
 .. image:: _static/29.lib.png
    :width: 600
