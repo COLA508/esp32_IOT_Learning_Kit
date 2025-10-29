@@ -145,9 +145,9 @@ Download the Driver
       :width: 600
       :align: center
 
-4. Alternatively, you can download the prepared installation package directly:  
-   `CH340 Installation Package（Windows）<https://www.dropbox.com/scl/fo/c4bb59fr42qcs9cxgexan/AIMImtqevecMqYNMJVK1ZBM?rlkey=9afntuwy2usxfxbl7xjkoirsy&st=89a5bx6b&dl=1>`_  
+4. Alternatively, you can download the prepared installation package directly: `CH340 Installation Package (Windows) <https://www.dropbox.com/scl/fo/c4bb59fr42qcs9cxgexan/AIMImtqevecMqYNMJVK1ZBM?rlkey=9afntuwy2usxfxbl7xjkoirsy&st=89a5bx6b&dl=1>`_
 
+----
 
 Install the Driver
 ~~~~~~~~~~~~~~~~~~~~
@@ -179,6 +179,7 @@ You should see the correct name and port number appear in the **Device Manager**
    :width: 600
    :align: center
 
+----
 
 Checking Correct Driver Installation in Arduino IDE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -240,6 +241,7 @@ Add Additional Boards Manager URL
 
    - After completing this step, you need to close and reopen the Arduino IDE.
 
+----
 
 Download the  ESP32 Core Package 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -310,6 +312,7 @@ Download Libraries
    :width: 700
    :align: center
 
+----
 
 Import Libraries
 ~~~~~~~~~~~~~~~~
@@ -351,6 +354,7 @@ Import Libraries
       :width: 600
       :align: center
 
+----
 
 Download Libraries Using Arduino IDE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
