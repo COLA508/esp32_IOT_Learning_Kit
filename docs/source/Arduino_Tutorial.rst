@@ -23,8 +23,7 @@ Install Arduino IDE on Windows
 1. Visit the official Arduino website and go to the software download page:  
    `Arduino IDE Download <https://www.arduino.cc/en/software/>`_
 
-   .. image:: _static/2.arduino_install.png
-      :width: 1000
+   .. image:: _static/2.arduino_install1.png
       :alt: Arduino IDE official website
       :align: center
 
