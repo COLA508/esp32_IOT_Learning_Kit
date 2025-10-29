@@ -79,9 +79,7 @@ Install Arduino IDE on MacOS
 Install Arduino IDE on Linux
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For Linux users, please follow the official tutorial for Arduino IDE 2.0 installation:  
-
-`Linux Installation Guide <https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing#linux>`_
+For Linux users, please follow the official tutorial for Arduino IDE 2.0 installation: `Linux Installation Guide <https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing#linux>`_
 
 ----
 
@@ -115,15 +113,16 @@ When you open Arduino IDE for the first time:
 2.Install CH340 Driver
 ----------------------
 
-The ESP32 development board in this kit uses the **CH340C USB-to-serial chip**, so you must install the corresponding driver before using it.  
+ - The ESP32 development board in this kit uses the **CH340C USB-to-serial chip**, so you must install the corresponding driver before using it.  
 
-If you connect the board to the computer without installing the driver, the device will not be recognized correctly, and you may see the following interface in the **Device Manager**:  
+ - If you connect the board to the computer without installing the driver, the device will not be recognized correctly, and you may see the following interface in the **Device Manager**:  
 
 .. image:: _static/12.CH340.png
    :alt: CH340 not recognized in Device Manager
    :width: 600
    :align: center
 
+----
 
 Download the Driver
 ~~~~~~~~~~~~~~~~~~~~
@@ -131,18 +130,32 @@ Download the Driver
 1. Visit the official website of the CH340 Driver:  
    `CH340 Driver <https://www.wch.cn/products/ch340.html>`_  
 
-2. Select the version that matches your computer system.  
-   (This tutorial uses **Windows 11** as an example.)  
+2. Select the version that matches your computer system.（This tutorial uses **Windows 11** as an example）.
+.. raw:: html
 
-   .. image:: _static/10.CH340.png
-      :width: 600
-      :align: center
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/10.CH340.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 3. Select the first Windows version, go to the download page, and click the **Download** button.  
 
-   .. image:: _static/11.CH340.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/11.CH340.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 4. Alternatively, you can download the prepared installation package directly: `CH340 Installation Package (Windows) <https://www.dropbox.com/scl/fo/c4bb59fr42qcs9cxgexan/AIMImtqevecMqYNMJVK1ZBM?rlkey=9afntuwy2usxfxbl7xjkoirsy&st=89a5bx6b&dl=1>`_
 
@@ -153,20 +166,37 @@ Install the Driver
 
 1. After downloading, open the driver file and click **Install**.  
 
-   .. image:: _static/13.CH340.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/13.CH340.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 2. When the installation is successful, you will see the following confirmation message:  
 
-   .. image:: _static/14.CH340.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/14.CH340.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. note::
 
    In some cases, you may need to **restart Windows** after installation to ensure the driver takes effect.  
 
+----
 
 Checking Correct Driver Installation in Device Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -274,9 +304,9 @@ Download the  ESP32 Core Package
 
    <div style="margin-top: 30px;"></div>
 
-   .. image:: _static/22.ESP32_CORE.png
-      :width: 600
-      :align: center
+.. image:: _static/22.ESP32_CORE.png
+   :width: 600
+   :align: center
 
 .. raw:: html
 
@@ -288,9 +318,9 @@ Download the  ESP32 Core Package
 
    <div style="margin-top: 30px;"></div>
 
-   .. image:: _static/23.ESP32_CORE.png
-      :width: 600
-      :align: center
+.. image:: _static/23.ESP32_CORE.png
+   :width: 600
+   :align: center
 
 .. raw:: html
 
@@ -302,9 +332,9 @@ Download the  ESP32 Core Package
 
    <div style="margin-top: 30px;"></div>
 
-   .. image:: _static/24.ESP32_CORE.png
-      :width: 600
-      :align: center
+.. image:: _static/24.ESP32_CORE.png
+   :width: 600
+   :align: center
 
 .. raw:: html
 
@@ -317,9 +347,9 @@ Click **Tools → Board → esp32** to check whether an ESP32 development board 
 
    <div style="margin-top: 30px;"></div>
 
-   .. image:: _static/25.ESP32_CORE.png
-      :width: 600
-      :align: center
+.. image:: _static/25.ESP32_CORE.png
+   :width: 600
+   :align: center
 
 .. raw:: html
 
@@ -372,9 +402,9 @@ Import Libraries
 
    <div style="margin-top: 30px;"></div>
 
-   .. image:: _static/27.lib.png
-      :width: 600
-      :align: center
+.. image:: _static/27.lib.png
+   :width: 600
+   :align: center
 
 .. raw:: html
 
@@ -386,9 +416,9 @@ Import Libraries
 
    <div style="margin-top: 30px;"></div>
 
-   .. image:: _static/28.lib.png
-      :width: 600
-      :align: center
+.. image:: _static/28.lib.png
+   :width: 600
+   :align: center
 
 .. raw:: html
 
@@ -400,9 +430,9 @@ Import Libraries
 
    <div style="margin-top: 30px;"></div>
 
-   .. image:: _static/31.lib.png
-      :width: 600
-      :align: center
+.. image:: _static/31.lib.png
+   :width: 600
+   :align: center
 
 .. raw:: html
 
