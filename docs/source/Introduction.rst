@@ -122,6 +122,15 @@ Upon receiving the kit, please first check all components against the above bill
 
 ----
 
+Resource Download
+-----------------
+
+All the necessary code and library files for this course are provided. You can obtain all the resources through the following link.
+
+`Code and Libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
+
+----
+
 **Next, we will delve into the core content of the course and help you gradually understand the relevant concepts and master the operation procedures.**
 
 ----
