@@ -42,3 +42,79 @@ Be able to implement real-time IoT web monitoring and remote interaction, demons
 
 ----
 
+Bill of Materials
+=================
+
+.. image:: _static/1-1/1.bom.jpg
+   :width: 800
+   :align: center
+
+
+.. list-table:: Bill of Materials
+   :header-rows: 1
+   :widths: 10 40 20
+   :align: center
+
+   * - Serial Number
+     - Name
+     - Quantity
+   * - 1
+     - ESP32 Devkit
+     - x1
+   * - 2
+     - ESP32 Expansion Board
+     - x1
+   * - 3
+     - LED Module
+     - x1
+   * - 4
+     - Button Module
+     - x1
+   * - 5
+     - Infrared Receiver Module
+     - x1
+   * - 6
+     - Buzzer Module
+     - x1
+   * - 7
+     - Motor Fan Module
+     - x1
+   * - 8
+     - RFID Module + ID card
+     - x1
+   * - 9
+     - DHT11 Temperature and Humidity Sensor
+     - x1
+   * - 10
+     - Light Sensor
+     - x1
+   * - 11
+     - Raindrop Sensor
+     - x1
+   * - 12
+     - Human Body Sensor
+     - x1
+   * - 13
+     - RGB Light Strip
+     - x1
+   * - 14
+     - LCD1602 Display
+     - x1
+   * - 15
+     - SG90 Servo
+     - x1
+   * - 16
+     - Infrared remote control
+     - x1
+   * - 17
+     - 6xAA Battery Pack
+     - x1
+   * - 18
+     - TYPE-C Data Cable
+     - x1
+   * - 19
+     - 3P Cable
+     - x10
+   * - 20
+     - 4P Cable
+     - x3
