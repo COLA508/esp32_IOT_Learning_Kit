@@ -24,6 +24,7 @@ Install Arduino IDE on Windows
    `Arduino IDE Download <https://www.arduino.cc/en/software/>`_
 
    .. image:: _static/2.arduino_install.png
+      :width: 1000
       :alt: Arduino IDE official website
       :align: center
 
@@ -59,6 +60,7 @@ Install Arduino IDE on Windows
       :alt: Installation finished
       :align: center
 
+----
 
 Install Arduino IDE on MacOS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,6 +75,7 @@ Install Arduino IDE on MacOS
       :alt: Arduino IDE installation on macOS
       :align: center
 
+----
 
 Install Arduino IDE on Linux
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,6 +84,7 @@ For Linux users, please follow the official tutorial for Arduino IDE 2.0 install
 
 `Linux Installation Guide <https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing#linux>`_
 
+----
 
 Open the Arduino IDE
 ~~~~~~~~~~~~~~~~~~~~
