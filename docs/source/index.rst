@@ -1,4 +1,4 @@
-ESP32 IOT SmartHome Kit
+ESP32 IOT Learning Kit
 =======================
 
 .. toctree::
@@ -6,9 +6,6 @@ ESP32 IOT SmartHome Kit
    :caption: Contents
 
    Introduction
-   Assembly_Tutorial
    Arduino_Tutorial
    Upload_code_to_ESP32
-   APP_download_and_use
-   The_kit_course_learning
-   FrequentlyAskedQuestions
+   

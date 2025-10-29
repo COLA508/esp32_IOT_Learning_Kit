@@ -1,5 +1,5 @@
 # -- Project information -----------------------------------------------------
-project = 'ESP32 IOT SmartHome Kit'
+project = 'ESP32 IoT Learning Kit'
 copyright = '2025, Lafvin'
 author = 'Lafvin'
 
