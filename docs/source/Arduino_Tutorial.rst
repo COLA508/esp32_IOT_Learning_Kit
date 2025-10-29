@@ -394,7 +394,7 @@ Download Libraries
 
    <div style="margin-top: 30px;"></div>
 
-.. image:: _static/26.lib.png
+.. image:: _static/26.lib2.png
    :width: 700
    :align: center
 
@@ -423,7 +423,7 @@ Import Libraries
 
    <div style="margin-top: 30px;"></div>
 
-.. image:: _static/28.lib.png
+.. image:: _static/28.lib2.png
    :width: 600
    :align: center
 
