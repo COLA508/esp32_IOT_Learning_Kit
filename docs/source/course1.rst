@@ -18,22 +18,19 @@ Learning Objectives
 
 ----
 
-Hardware Principles
--------------------
-
 Required Component
-~~~~~~~~~~~~~~~~~~
+------------------
 
  - LED Module、Button Module
 
 Working Principle
-~~~~~~~~~~~~~~~~
+-----------------
 
  - LED Module：LED（Light Emitting Diode）is a semiconductor device that converts electrical energy into light energy. Its working principle is based on the electron-hole recombination effect when a PN junction is forward-biased, resulting in light emission.
  - Button Module：Structurally, it is a mechanical contact switch. When pressed, the two contacts close, and the circuit is completed; when released, the contacts open, and the circuit is broken.
 
 Wiring
-~~~~~~
+------
 
  - LED Module —— ESP32 IO26
  - Button Module —— ESP32 IO25
