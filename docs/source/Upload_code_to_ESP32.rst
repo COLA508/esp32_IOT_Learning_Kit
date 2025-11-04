@@ -9,7 +9,7 @@ Upload Code To ESP32
 
 .. _Arduino IDE burning program:
 
-Option 1:Arduino IDE
+Option 1: Arduino IDE
 --------------------
 After completing the previous steps, ensure that the CH340 serial port driver has been installed, the ESP32 core package has been downloaded and installed, and the required library files have been imported. At this point, you can upload the code to the ESP32 development board and start running the program.
 
@@ -148,7 +148,7 @@ Upload Code
 
 .. _Flash Download Tool:
 
-Option 2:Flash Download Tool
+Option 2: Flash Download Tool
 ---------------------------
 
 **Of course, if you find the above steps cumbersome or encounter unresolved errors during the Arduino IDE flashing process, you can also use Espressif's official flashing tool.We've packaged the complete program as a bin file. You can flash the firmware directly to your ESP32 development board without importing libraries or downloading the ESP32 core package, helping you quickly and conveniently experience the full capabilities of this kit.**
@@ -230,7 +230,7 @@ Burn firmware
 
 3. On the pop-up page, select **ESP32** from the "Chip Type" drop-down menu, select **Develop** from the "WorkMode" drop-down menu, and leave **UART** as the default setting for "LoadMode". Click **OK** when finished.
 
-.. image:: _static/46.TOOL.png
+.. image:: _static/46.TOOL1.png
    :width: 600
    :align: center
 
