@@ -9,9 +9,8 @@ Upload Code To ESP32
 
 .. _Arduino IDE burning program:
 
-Option 1:Use Arduino IDE to burn the program
---------------------------------------------
-
+Option 1:Arduino IDE
+--------------------
 After completing the previous steps, ensure that the CH340 serial port driver has been installed, the ESP32 core package has been downloaded and installed, and the required library files have been imported. At this point, you can upload the code to the ESP32 development board and start running the program.
 
 ----
@@ -19,7 +18,7 @@ After completing the previous steps, ensure that the CH340 serial port driver ha
 Download the Code
 ~~~~~~~~~~~~~~~~~
 
-1. Click the link below to download the code we prepared. The complete code path is: **Code and Libraries** → **Code** → **10.SmartHome_CompleteCode**.
+1. Click the link below to download the code we prepared. The complete code path is: **Code and Libraries** → **Code** → **11.Com Exercises**.
 `Download Code <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
 .. image:: _static/51.code.png
@@ -32,7 +31,7 @@ Download the Code
 
 .. note::
 
-The example code examples numbered 1–10 are step-by-step tutorials, with each example demonstrating the functionality of 1–3 modules. If you wish to experience the full functionality of all modules, please directly use example code example number 11 for flashing.
+   The example code examples numbered 1–10 are step-by-step tutorials, with each example demonstrating the functionality of 1–3 modules. If you wish to experience the full functionality of all modules, please directly use example code example number 11 for flashing.
 
 2. Cick **File → Open** in Arduino IDE.  
 3. In the pop-up window, locate the downloaded code, select the corresponding folder or file, and click **Open**.  
@@ -165,7 +164,7 @@ Upload Code
 
 .. _Direct Burn Program:
 
-Option 2:Direct Burn Program
+Option 2:Flash Download Tool
 ---------------------------
 
 **Of course, if you find the above steps cumbersome or encounter unresolved errors during the Arduino IDE flashing process, you can also use Espressif's official flashing tool.We've packaged the complete program as a bin file. You can flash the firmware directly to your ESP32 development board without importing libraries or downloading the ESP32 core package, helping you quickly and conveniently experience the full capabilities of this kit.**
