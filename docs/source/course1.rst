@@ -5,6 +5,8 @@ Course 1：Button_LED
     :alt: Arduino IDE official website
     :align: center
 
+----
+
 Learning Objectives
 -------------------
 
@@ -22,7 +24,7 @@ Hardware Principles
 Required Component
 ~~~~~~~~~~~~~~~~~~
 
-LED Module、Button Module
+ - LED Module、Button Module
 
 Working Principle
 ~~~~~~~~~~~~~~~~
@@ -32,6 +34,9 @@ Working Principle
 
 Wiring
 ~~~~~~
+
+ - LED Module —— ESP32 IO26
+ - Button Module —— ESP32 IO25
 
 .. image:: _static/COURSE/1.ledbutton.png
     :alt: Arduino IDE official website
