@@ -3,7 +3,7 @@ Upload Code To ESP32
 
  There are two ways to flash the firmware. If you have already installed the Arduino IDE and CH340 drivers and successfully downloaded the ESP32 core package and necessary libraries, you can continue to flash the firmware in the Arduino IDE by following the steps below. 
  
- If you want to experience the features of this kit more quickly or encounter problems during the Arduino IDE installation, you can also click this link to use Espressif's official flashing tool to flash the firmware to the ESP32 development board, which is simpler and faster. :ref:`Direct Burn Program`.
+ If you want to experience the features of this kit more quickly or encounter problems during the Arduino IDE installation, you can also click this link to use Espressif's official flashing tool to flash the firmware to the ESP32 development board, which is simpler and faster. :ref:`Flash Download Tool`.
 
 ----
 
@@ -52,14 +52,6 @@ Download the Code
 
    <div style="margin-top: 30px;"></div>
 
-.. note::
-
-   - If the folder name of the downloaded code does not match the code file name, a prompt will appear asking if you want to "create a folder with the same name and move the file into it." Select **OK** to confirm.  
-   - If this prompt does not appear, you can ignore it.  
-
-   .. image:: _static/38.upload1.png
-      :width: 600
-      :align: center
 
 4. **Modify wifi name and password**
 
@@ -70,9 +62,7 @@ Download the Code
    :width: 800
    :align: center
 
-.. raw:: html
-
-   <div style="margin-top: 30px;"></div>
+----
 
 Select a Development Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,9 +73,7 @@ Select **Tools → Board → ESP32 → ESP32 Dev Module** in Arduino IDE.
    :width: 800
    :align: center
 
-.. raw:: html
-
-   <div style="margin-top: 30px;"></div>
+----
 
 Select the Serial Port
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -97,9 +85,7 @@ COMx should match the port of the connected ESP32 development board.
    :width: 600
    :align: center
 
-.. raw:: html
-
-   <div style="margin-top: 30px;"></div>
+----
 
 Check Board and Port Selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -110,10 +96,7 @@ Check Board and Port Selection
    :width: 600
    :align: center
 
-
-.. raw:: html
-
-   <div style="margin-top: 30px;"></div>
+----
    
 Upload Code
 ~~~~~~~~~~~
@@ -162,19 +145,21 @@ Upload Code
 
 ----
 
-.. _Direct Burn Program:
+.. _Flash Download Tool:
 
 Option 2:Flash Download Tool
 ---------------------------
 
 **Of course, if you find the above steps cumbersome or encounter unresolved errors during the Arduino IDE flashing process, you can also use Espressif's official flashing tool.We've packaged the complete program as a bin file. You can flash the firmware directly to your ESP32 development board without importing libraries or downloading the ESP32 core package, helping you quickly and conveniently experience the full capabilities of this kit.**
 
+----
 
 Install CH340 Driver
 ~~~~~~~~~~~~~~~~~~~
 
 - Similarly, before using Espressif's official flashing tool, you must first install the CH340 driver so that the ESP32 development board can communicate properly with your computer. If the CH340 driver is not installed, please see the CH340 driver installation tutorial page: See :ref:`install_ch340_driver` for detailed instructions.
 
+----
 
 Download burning tools
 ~~~~~~~~~~~~~~~~~~~
@@ -184,27 +169,52 @@ Download burning tools
 2. Click this link to enter Espressif's official burning tool download page.  
    `Espressif Burning Tool <https://www.espressif.com.cn/zh-hans/support/download/other-tools>`_
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 .. image:: _static/42.TOOL.png
    :width: 600
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 3. Click the Download button in the image to automatically download Espressif's official programming tool. The tool's features and instructions are also provided at the bottom of the page. If you're interested, please read and learn more.
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. image:: _static/43.TOOL.png
    :width: 600
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 4. After decompressing the downloaded compressed file, you will see several files contained in it, as shown in the figure below.
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. image:: _static/44.TOOL.png
    :width: 600
    :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 5. Click this link to download the bin firmware file we prepared for you.  
    `Download firmware <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
 6. Move the downloaded bin firmware file to the bin folder in the previously downloaded and unzipped burning tool directory.
 
+----
 
 Burn firmware
 ~~~~~~~~~~~~~
