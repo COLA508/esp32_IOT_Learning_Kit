@@ -8,4 +8,5 @@ ESP32 IOT Learning Kit
    Introduction
    Arduino_Tutorial
    Upload_code_to_ESP32
+   course1.rst
    
