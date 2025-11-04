@@ -34,6 +34,7 @@ Download the Code
    The example code examples numbered 1–10 are step-by-step tutorials, with each example demonstrating the functionality of 1–3 modules. If you wish to experience the full functionality of all modules, please directly use example code example number 11 for flashing.
 
 2. Cick **File → Open** in Arduino IDE.  
+
 3. In the pop-up window, locate the downloaded code, select the corresponding folder or file, and click **Open**.  
 
 .. image:: _static/36.upload.png
@@ -55,7 +56,7 @@ Download the Code
 
 4. **Modify wifi name and password**
 
- - To control the SmartHome using the app, you must first modify the WiFi name and password in the code to your network's actual information.Otherwise, the device will fail to connect to the network, and remote control via the app will be unavailable.
+ - To enable web-based control, the ESP32 development board must first be successfully connected to a WiFi network, and the ESP32 development board and the mobile phone must be on the same network. Otherwise, web-based control will not function properly.
  - Please modify the code to your own WiFi name （SSID）and password as shown in the image below to ensure that the device can connect to the network normally.
 
  .. image:: _static/61.WiFi1.png
