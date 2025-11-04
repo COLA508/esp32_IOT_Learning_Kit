@@ -22,8 +22,8 @@ Download the Code
 1. Click the link below to download the code we prepared. The complete code path is: **Code and Libraries** → **Code** → **10.SmartHome_CompleteCode**.
 `Download Code <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
-.. image:: _static/60.code.png
-   :width: 600
+.. image:: _static/51.code.png
+   :width: 800
    :align: center
 
 .. raw:: html
@@ -32,8 +32,7 @@ Download the Code
 
 .. note::
 
-   - The code numbers 1–9 in this folder are step-by-step tutorial examples, designed only for learning a single functional module. Using these sample codes may prevent some system features from being implemented.
-   - If you wish to directly experience the full functionality of the Smart Home Kit, please download the code in the **10.SmartHome_CompleteCode** folder.
+The example code examples numbered 1–10 are step-by-step tutorials, with each example demonstrating the functionality of 1–3 modules. If you wish to experience the full functionality of all modules, please directly use example code example number 11 for flashing.
 
 2. Cick **File → Open** in Arduino IDE.  
 3. In the pop-up window, locate the downloaded code, select the corresponding folder or file, and click **Open**.  
