@@ -292,15 +292,14 @@ Example Code
 Effects Demonstration
 ---------------------
 
-1. Press the button to turn on the LED light, and press it again to turn it off.
+ - Press the button to turn on the LED light, and press it again to turn it off.
 
-2. After opening the web control page, clicking the button on the webpage controls the LED light's on/off state.
+ - After opening the web control page, clicking the button on the webpage controls the LED light's on/off state.
 
-3. The webpage button and the physical button achieve synchronized control; operation on either will update the other's status in real time, enabling two-way linkage.
+ - The webpage button and the physical button achieve synchronized control; operation on either will update the other's status in real time, enabling two-way linkage.
 
 .. code-block:: cpp
-   :caption: cpp
-
+ 
     server.on("/", [](){
         server.send(200, "text/html", HTMLPage());
     });
@@ -314,7 +313,7 @@ Effects Demonstration
         server.send(200, "text/plain", ledState ? "1" : "0");
     });
 
-/toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.
+- /toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.
 
 
 .. image:: _static/COURSE/3.LED.png
