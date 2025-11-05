@@ -11,7 +11,7 @@ With its cross-platform support (Windows, macOS, and Linux), the Arduino IDE is 
 
 ----
 
-1.Install the Arduino IDE
+1.Install Arduino IDE
 -------------------------
 
 This section will guide you through installing the **Arduino IDE** on Windows, macOS, and Linux systems.  
@@ -242,7 +242,7 @@ Checking Correct Driver Installation in Arduino IDE
 
 ----
 
-3.Install The ESP32 Core Board 
+3.Install ESP32 Core Board 
 -------------------------------
 
 Add Additional Boards Manager URL
