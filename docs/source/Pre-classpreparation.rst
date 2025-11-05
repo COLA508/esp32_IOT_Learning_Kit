@@ -12,7 +12,7 @@ All the necessary code and library files for this course are provided. You can o
 
 1. The **Code** folder contains the following 11 folders.
 
-.. image:: _static/64.code.jpg
+.. image:: _static/64.code.png
    :width: 800
    :align: center
 
@@ -20,7 +20,15 @@ All the necessary code and library files for this course are provided. You can o
   - .ino files are used for programming with the Arduino IDE; 
   - .bin files are used for programming with flash_download_tool.
 
-.. image:: _static/65.code.jpg
+.. image:: _static/65.code.png
+   :width: 800
+   :align: center
+
+3. The libraries folder contains the following 7 compressed files, which do not need to be extracted. 
+
+   Import them directly into the Arduino IDE. Click here for import instructions. :ref:`Add Libraries`.
+
+.. image:: _static/66.lib.png
    :width: 800
    :align: center
 

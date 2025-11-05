@@ -372,6 +372,8 @@ Click **Tools → Board → esp32** to check whether an ESP32 development board 
 
 ----
 
+.. _Add Libraries:
+
 4.Add Libraries
 ---------------
 
