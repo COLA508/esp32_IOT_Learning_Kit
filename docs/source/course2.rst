@@ -10,9 +10,9 @@ Course 2：IR_Display
 Learning Objectives
 -------------------
 
-1. Understand the principles of infrared remote control signal reception and decoding（NEC protocol）.
+ - Understand the principles of infrared remote control signal reception and decoding（NEC protocol）.
 
-2. Implement an interactive effect that displays the infrared button values ​​in real time on a webpage.
+ - Implement an interactive effect that displays the infrared button values ​​in real time on a webpage.
 
 ----
 
