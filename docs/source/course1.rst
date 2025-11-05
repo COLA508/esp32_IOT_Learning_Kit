@@ -313,7 +313,7 @@ Effects Demonstration
         server.send(200, "text/plain", ledState ? "1" : "0");
     });
 
-- /toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.
+*/toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.*
 
 
 .. image:: _static/COURSE/3.LED.png
