@@ -11,4 +11,4 @@ ESP32 IOT Learning Kit
    Pre-classpreparation.rst
    course1.rst
    course2.rst
-   
+   course3.rst
