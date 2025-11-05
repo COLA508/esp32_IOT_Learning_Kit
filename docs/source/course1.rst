@@ -289,16 +289,16 @@ Example Code
 
 ----
 
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **1.Button_LED.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Find the **1.Button_LED.bin** file in the provided folder, download it and use Flash Download Tool to flash the program to the ESP32 development board. 
+
+----
+
 Effects Demonstration
 ---------------------
-
-.. image:: _static/COURSE/3.LED1.png
-   :width: 600
-   :align: center
-
-.. raw:: html
-
-   <div style="margin-top: 30px;"></div>
 
 1. Press the button to turn on the LED light, and press it again to turn it off.
 
@@ -323,5 +323,8 @@ Effects Demonstration
 
 */toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.*
 
+.. image:: _static/COURSE/3.LED1.png
+   :width: 600
+   :align: center
 
 ----

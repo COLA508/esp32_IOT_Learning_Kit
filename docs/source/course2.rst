@@ -1,4 +1,4 @@
-Course 1：IR_Display
+Course 2：IR_Display
 ====================
 
 .. image:: _static/COURSE/1.ledbutton.png
@@ -342,20 +342,20 @@ Example Code
 
 ----
 
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **2.IR_Display.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Find the **2.IR_Display.bin** file in the provided folder, download it and use Flash Download Tool to flash the program to the ESP32 development board. 
+
+----
+
 Effects Demonstration
 ---------------------
 
-.. image:: _static/COURSE/3.LED1.png
-   :width: 600
-   :align: center
+1. When a button on the remote control is pressed, the ESP32 receives the infrared signal and parses the corresponding code. The web interface will then display the name of the button, enabling real-time interaction between the remote control and the web interface.
 
-.. raw:: html
-
-   <div style="margin-top: 30px;"></div>
-
- - When a button on the remote control is pressed, the ESP32 receives the infrared signal and parses the corresponding code. The web interface will then display the name of the button, enabling real-time interaction between the remote control and the web interface.
-
- - Infrared key mapping function：
+2. Infrared key mapping function：
 
 .. code-block:: cpp
  
@@ -380,5 +380,8 @@ Effects Demonstration
    }
  }
 
-
+.. image:: _static/COURSE/3.LED1.png
+   :width: 600
+   :align: center
+   
 ----
