@@ -45,21 +45,7 @@ Download the Code
 
    <div style="margin-top: 30px;"></div>
 
-.. image:: _static/37.upload1.png
-   :width: 800
-   :align: center
-
-.. raw:: html
-
-   <div style="margin-top: 30px;"></div>
-
-
-4. **Modify wifi name and password**
-
- - To enable web-based control, the ESP32 development board must first be successfully connected to a WiFi network, and the ESP32 development board and the mobile phone must be on the same network. Otherwise, web-based control will not function properly.
- - Please modify the code to your own WiFi name （SSID）and password as shown in the image below to ensure that the device can connect to the network normally.
-
- .. image:: _static/61.WiFi1.png
+.. image:: _static/37.upload2.png
    :width: 800
    :align: center
 
@@ -104,7 +90,7 @@ Upload Code
 
 1. Click the **Upload** icon in Arduino IDE. The system will automatically compile and upload the code to the ESP32 development board.  
 
-.. image:: _static/39.upload.png
+.. image:: _static/39.upload1.png
    :width: 600
    :align: center
 
