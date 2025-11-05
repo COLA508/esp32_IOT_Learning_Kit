@@ -1,4 +1,4 @@
-Course 1：Button_LED
+Course 1：IR_Display
 ====================
 
 .. image:: _static/COURSE/1.ledbutton.png
@@ -345,6 +345,14 @@ Example Code
 Effects Demonstration
 ---------------------
 
+.. image:: _static/COURSE/3.LED1.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
  - When a button on the remote control is pressed, the ESP32 receives the infrared signal and parses the corresponding code. The web interface will then display the name of the button, enabling real-time interaction between the remote control and the web interface.
 
  - Infrared key mapping function：
@@ -372,9 +380,5 @@ Effects Demonstration
    }
  }
 
-
-.. image:: _static/COURSE/3.LED1.png
-   :width: 600
-   :align: center
 
 ----
