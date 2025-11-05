@@ -291,3 +291,17 @@ Example Code
 
 Effects Demonstration
 ---------------------
+
+1. Press the button to turn on the LED light, and press it again to turn it off.
+
+2. After opening the web control page, clicking the button on the webpage controls the LED light's on/off state.
+
+   The button's status will update synchronously when the LED is on; clicking it again will turn it off.
+
+   The webpage button and the physical button achieve synchronized control; operation on either will update the other's status in real time, enabling two-way linkage.
+
+.. image:: _static/COURSE/2.ledwiring.png
+    :alt: Arduino IDE official website
+    :align: center
+
+----
