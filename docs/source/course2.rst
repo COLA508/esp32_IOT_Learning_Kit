@@ -1,7 +1,7 @@
 Course 2：IR_Display
 ====================
 
-.. image:: _static/COURSE/1.ledbutton.png
+.. image:: _static/COURSE/5.IR.png
     :alt: Arduino IDE official website
     :align: center
 
@@ -27,13 +27,12 @@ Working Principle
  - When a button on the remote control is pressed, the infrared LED emits 38 kHz modulated infrared light, carrying a code representing the button press （such as the NEC protocol）. The receiver is sensitive to 38 kHz infrared light and converts the optical signal into an electrical signal. The MCU （such as ESP32） samples the pulse signal and deciphers the button press value.
 
 Wiring
-------
+--------
 
  - IR Receiver Module —— ESP32 IO15
 
-.. image:: _static/COURSE/2.ledwiring.png
-    :alt: Arduino IDE official website
-    :align: center
+.. image:: _static/COURSE/6.IR.png
+  :align: center
 
 ----
 
@@ -343,10 +342,9 @@ Example Code
 ----
 
 **Code burning options**
-
- - You can directly copy the code provided above into the Arduino IDE for burning.
- - Find the **2.IR_Display.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Find the **2.IR_Display.bin** file in the provided folder, download it and use Flash Download Tool to flash the program to the ESP32 development board. 
+ 1. You can directly copy the code provided above into the Arduino IDE for burning.
+ 2. Find the **2.IR_Display.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ 3. Find the **2.IR_Display.bin** file in the provided folder, download it and use Flash Download Tool to flash the program to the ESP32 development board. 
 
 ----
 
