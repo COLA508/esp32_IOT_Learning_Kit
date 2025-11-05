@@ -323,7 +323,7 @@ Effects Demonstration
 
 */toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.*
 
-.. image:: _static/COURSE/4.IR.png
+.. image:: _static/COURSE/3.LED1.png
    :width: 600
    :align: center
 

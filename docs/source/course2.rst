@@ -380,8 +380,8 @@ Effects Demonstration
    }
  }
 
-.. image:: _static/COURSE/3.LED1.png
-   :width: 600
+.. image:: _static/COURSE/4.IR.png
+   :width: 800
    :align: center
-   
+
 ----
