@@ -35,7 +35,7 @@ Wiring
  - LED Module —— ESP32 IO26
  - Button Module —— ESP32 IO25
 
-.. image:: _static/COURSE/1.ledbutton.png
+.. image:: _static/COURSE/2.ledwiring.png
     :alt: Arduino IDE official website
     :align: center
 
@@ -43,3 +43,4 @@ Wiring
 
 Example Code
 ------------
+
