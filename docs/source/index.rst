@@ -10,4 +10,5 @@ ESP32 IOT Learning Kit
    Upload_code_to_ESP32
    Pre-classpreparation.rst
    course1.rst
+   course2.rst
    
