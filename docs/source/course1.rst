@@ -296,12 +296,22 @@ Effects Demonstration
 
 2. After opening the web control page, clicking the button on the webpage controls the LED light's on/off state.
 
-   The button's status will update synchronously when the LED is on; clicking it again will turn it off.
+.. code-block:: cpp
+    server.on("/", [](){
+    server.send(200, "text/html", HTMLPage());
+    });
+    server.on("/toggle", [](){
+       = !ledState;
+     server.send(200, "text/plain", ledState ? "1" : "0");
+    });
+     server.on("/state", [](){
+     server.send(200, "text/plain", ledState ? "1" : "0");
+    });
 
-   The webpage button and the physical button achieve synchronized control; operation on either will update the other's status in real time, enabling two-way linkage.
+3. /toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.The webpage button and the physical button achieve synchronized control; operation on either will update the other's status in real time, enabling two-way linkage.
 
 .. image:: _static/COURSE/3.LED.png
-    :alt: Arduino IDE official website
-    :align: center
+   :width: 600
+   :align: center
 
 ----
