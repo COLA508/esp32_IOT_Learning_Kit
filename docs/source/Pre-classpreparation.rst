@@ -44,3 +44,26 @@ Configure network
 In the following lessons, we will use a web page to control the device multiple times. 
 
 To ensure that the web control function works properly, please be sure to follow the steps below to complete the network configuration and successfully connect your ESP32 device to the WiFi network.
+
+1. After programming, open the serial monitor in the Arduino IDE and press the **RST** button on the ESP32 development board.
+
+.. image:: _static/68.port.png
+   :width: 800
+   :align: center
+
+2. The ESP32 development board will generate a hotspot named after the title of each course; we'll use the first course as an example here.
+
+3. Turn on your phone's Wi-Fi and find and connect to the hotspot name emitted by your device. Once connected, open your phone's browser and enter **192.168.4.1** in the address bar to access the network configuration interface. Then, enter your home Wi-Fi name and password to complete the device's network setup.
+
+.. image:: _static/67.wifi.png
+   :width: 800
+   :align: center
+
+4. Open the serial monitor and wait for the device to connect successfully. The assigned IP address will then be displayed. Enter this IP address into your browser's address bar to open the device control page.
+
+.. image:: _static/69.port.png
+   :width: 800
+   :align: center
+
+----
+
