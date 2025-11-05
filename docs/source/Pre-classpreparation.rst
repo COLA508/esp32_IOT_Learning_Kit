@@ -16,6 +16,10 @@ All the necessary code and library files for this course are provided. You can o
    :width: 800
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 2. Each folder contains two files.
   - .ino files are used for programming with the Arduino IDE; 
   - .bin files are used for programming with flash_download_tool.
@@ -24,7 +28,7 @@ All the necessary code and library files for this course are provided. You can o
    :width: 800
    :align: center
 
-3. The libraries folder contains the following 7 compressed files, which do not need to be extracted. 
+3. The **libraries** folder contains the following 7 compressed files, which do not need to be extracted. 
 
    Import them directly into the Arduino IDE. Click here for import instructions. :ref:`Add Libraries`.
 
@@ -32,8 +36,11 @@ All the necessary code and library files for this course are provided. You can o
    :width: 800
    :align: center
 
+----
+
 Configure network
 -----------------
+
 In the following lessons, we will use a web page to control the device multiple times. 
 
 To ensure that the web control function works properly, please be sure to follow the steps below to complete the network configuration and successfully connect your ESP32 device to the WiFi network.

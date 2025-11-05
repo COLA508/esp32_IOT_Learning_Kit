@@ -1,4 +1,4 @@
-Course 1：Button_LED
+Course 1-Button_LED
 ====================
 
 .. image:: _static/COURSE/1.ledbutton.png
