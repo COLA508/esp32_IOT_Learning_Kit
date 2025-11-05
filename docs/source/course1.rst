@@ -45,7 +45,7 @@ Example Code
 ------------
 
 .. code-block:: cpp
-  
+
    #include <WiFi.h>
    #include <WebServer.h>
    #include <Preferences.h>
@@ -100,7 +100,7 @@ Example Code
      return html;
    }
 
-   // ---------- HTML Control Page ----------
+   // ---------- HTML Control Page (with LED bulb icon) ----------
    String controlHTMLPage() {
      String html = "<!DOCTYPE html><html><head>";
      html += "<title>ESP32 LED Control</title>";
@@ -129,14 +129,14 @@ Example Code
              "document.getElementById('ledState').innerText=s?'ON':'OFF';"
              "var b=document.getElementById('ledButton');b.className=s?'on':'off';"
              "var bulb=document.querySelector('#ledIcon .bulb');"
-             "if(s){bulb.style.backgroundColor='#4CAF50';bulb.style.boxShadow='0 0 20px #4CAF50,0 0 40px #4CAF50';}"
+             "if(s){bulb.style.backgroundColor='#4CAF50';bulb.style.boxShadow='0 0 20px #4CAF50,0 0 40px #4CAF50,0 0 60px #4CAF50';}"
              "else{bulb.style.backgroundColor='#f44336';bulb.style.boxShadow='0 0 10px rgba(0,0,0,0.2)';}});}"
              "setInterval(updateState,500);"
              "</script></body></html>";
      return html;
    }
 
-   // ---------- Setup Routes ----------
+   // ---------- Setup Web Routes ----------
    void setupRoutes() {
      server.on("/", [](){
        if (isConfigMode) server.send(200, "text/html", configHTMLPage());
@@ -149,8 +149,11 @@ Example Code
        preferences.putString("ssid", wifiSSID);
        preferences.putString("password", wifiPassword);
        server.send(200, "text/html",
-                   "<html><body><h2>Connecting...</h2><p>SSID:" + wifiSSID + "</p>"
-                   "<p>Restarting...</p><script>setTimeout(()=>{location.href='/'},3000);</script></body></html>");
+                   "<html><body><h2>Connecting to WiFi...</h2>"
+                   "<p>SSID: " + wifiSSID + "</p>"
+                   "<p>Device will restart and attempt connection.</p>"
+                   "<script>setTimeout(() => { location.href = '/'; }, 3000);</script>"
+                   "</body></html>");
        delay(2000);
        ESP.restart();
      });
@@ -165,9 +168,10 @@ Example Code
      });
    }
 
-   // ---------- WiFi Connection ----------
+   // ---------- Connect to WiFi ----------
    bool connectToWiFi() {
      if (wifiSSID == "") return false;
+     Serial.println("Attempting to connect to WiFi: " + wifiSSID);
      WiFi.begin(wifiSSID.c_str(), wifiPassword.c_str());
      int attempts = 0;
      while (WiFi.status() != WL_CONNECTED && attempts < 20) {
@@ -176,50 +180,69 @@ Example Code
        attempts++;
      }
      if (WiFi.status() == WL_CONNECTED) {
-       Serial.println("\nConnected!");
-       Serial.println("IP: " + WiFi.localIP().toString());
+       Serial.println("\nWiFi connected successfully!");
+       Serial.println("IP address: " + WiFi.localIP().toString());
        return true;
      } else {
-       Serial.println("\nConnection failed");
+       Serial.println("\nFailed to connect to WiFi");
        return false;
      }
    }
 
+   // ---------- Setup Access Point ----------
    void setupAccessPoint() {
+     Serial.println("Setting up Access Point...");
      WiFi.softAP(apSSID, apPassword);
-     Serial.println("AP started");
-     Serial.println("IP: " + WiFi.softAPIP().toString());
+     Serial.println("Access Point started");
+     Serial.println("SSID: " + String(apSSID));
+     Serial.println("Password: None (Open Network)");
+     Serial.println("IP address: " + WiFi.softAPIP().toString());
    }
 
+   // ---------- Setup ----------
    void setup() {
      Serial.begin(115200);
      pinMode(ledPin, OUTPUT);
      pinMode(buttonPin, INPUT_PULLUP);
+
      preferences.begin("wifi-config", false);
      wifiSSID = preferences.getString("ssid", "");
      wifiPassword = preferences.getString("password", "");
+
+     Serial.println("=== ESP32 WiFi Configuration ===");
+
      if (wifiSSID != "" && connectToWiFi()) {
        isConfigMode = false;
        wifiConnected = true;
+       Serial.println("Mode: Station (Connected to WiFi)");
      } else {
        isConfigMode = true;
        wifiConnected = false;
        setupAccessPoint();
+       Serial.println("Mode: Access Point (Configuration)");
      }
+
      setupRoutes();
      server.begin();
+     Serial.println("Web server started");
    }
 
+   // ---------- Main Loop ----------
    void loop() {
      server.handleClient();
+
+     // Button detection with debouncing
      bool buttonState = digitalRead(buttonPin);
      if (buttonState == LOW && lastButtonState == HIGH) {
        ledState = !ledState;
-       delay(50);
+       delay(50); // Simple debounce
      }
      lastButtonState = buttonState;
+
+     // Control LED
      digitalWrite(ledPin, ledState ? HIGH : LOW);
    }
+
 
 ----
 
