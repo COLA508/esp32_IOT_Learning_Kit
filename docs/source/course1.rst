@@ -296,19 +296,26 @@ Effects Demonstration
 
 2. After opening the web control page, clicking the button on the webpage controls the LED light's on/off state.
 
+3. The webpage button and the physical button achieve synchronized control; operation on either will update the other's status in real time, enabling two-way linkage.
+
 .. code-block:: cpp
+   :caption: cpp
+
     server.on("/", [](){
-    server.send(200, "text/html", HTMLPage());
-    });
-    server.on("/toggle", [](){
-       = !ledState;
-     server.send(200, "text/plain", ledState ? "1" : "0");
-    });
-     server.on("/state", [](){
-     server.send(200, "text/plain", ledState ? "1" : "0");
+        server.send(200, "text/html", HTMLPage());
     });
 
-3. /toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.The webpage button and the physical button achieve synchronized control; operation on either will update the other's status in real time, enabling two-way linkage.
+    server.on("/toggle", [](){
+        ledState = !ledState;
+        server.send(200, "text/plain", ledState ? "1" : "0");
+    });
+
+    server.on("/state", [](){
+        server.send(200, "text/plain", ledState ? "1" : "0");
+    });
+
+/toggle is used to toggle the LED state, and /state is used to read the LED state in real time via a webpage.
+
 
 .. image:: _static/COURSE/3.LED.png
    :width: 600
