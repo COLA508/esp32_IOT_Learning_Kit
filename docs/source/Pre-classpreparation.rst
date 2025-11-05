@@ -80,7 +80,6 @@ To ensure that the web control function works properly, please be sure to follow
 ----
 
 .. admonition:: Precaution
-   :class: note
 
  The firmware burned using the Flash Download Tool can also have its IP address viewed through the Arduino IDE's serial monitor.
 
