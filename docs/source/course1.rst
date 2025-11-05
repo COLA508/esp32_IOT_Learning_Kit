@@ -1,4 +1,4 @@
-Course 1-Button_LED
+Course 1：Button_LED
 ====================
 
 .. image:: _static/COURSE/1.ledbutton.png
@@ -45,106 +45,181 @@ Example Code
 ------------
 
 .. code-block:: cpp
+  
+   #include <WiFi.h>
+   #include <WebServer.h>
+   #include <Preferences.h>
 
-   #include <Arduino.h>
+   // ---------- Hardware Definitions ----------
+   const int ledPin = 26;       // LED pin
+   const int buttonPin = 25;    // Physical button pin
 
-   // LED configuration
-   #define LED_PIN 26
+   bool ledState = false;       // LED state
+   bool lastButtonState = HIGH; // Last button state
 
-   // Voice recognition
-   #define VOICE_RX_PIN 16
-   #define VOICE_TX_PIN 17
-   #define VOICE_HEADER 0xAA          // Packet header
-   #define VOICE_FOOTER 0xBB          // Packet footer
-   #define VOICE_PACKET_LENGTH 3      // Packet length
-   #define VOICE_KEY_LED_ON 0x03
-   #define VOICE_KEY_LED_OFF 0x04
+   // ---------- WiFi Configuration ----------
+   const char* apSSID = "Button_LED";  // Access Point SSID (no password)
+   const char* apPassword = NULL;      // No password
 
-   HardwareSerial VoiceSerial(2);
+   String wifiSSID = "";        // Store target WiFi SSID
+   String wifiPassword = "";    // Store target WiFi password
 
-   // Voice protocol parsing variables
-   uint8_t voiceBuffer[VOICE_PACKET_LENGTH];
-   int voiceBufferIndex = 0;
-   bool voiceReceiving = false;
-   unsigned long lastVoiceByteTime = 0;
-   const unsigned long VOICE_TIMEOUT = 100; // Byte timeout in ms
+   bool isConfigMode = true;    // Configuration mode flag
+   bool wifiConnected = false;  // WiFi connection status
 
-   void setLedValue(int val) {
-     digitalWrite(LED_PIN, val);
+   // ---------- Create Web Server ----------
+   WebServer server(80);
+
+   // ---------- Preferences for storing WiFi credentials ----------
+   Preferences preferences;
+
+   // ---------- HTML Configuration Page ----------
+   String configHTMLPage() {
+     String html = "<!DOCTYPE html><html><head>";
+     html += "<title>ESP32 WiFi Configuration</title>";
+     html += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
+     html += "<style>"
+             "body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }"
+             ".container { max-width: 400px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }"
+             "h2 { text-align: center; color: #333; }"
+             "input, button { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }"
+             "button { background-color: #4CAF50; color: white; border: none; cursor: pointer; font-size: 16px; }"
+             "button:hover { background-color: #45a049; }"
+             "</style></head><body>";
+
+     html += "<div class='container'>";
+     html += "<h2>WiFi Configuration</h2>";
+
+     html += "<form action='/configure' method='POST'>";
+     html += "<input type='text' name='ssid' placeholder='WiFi SSID' required>";
+     html += "<input type='password' name='password' placeholder='WiFi Password' required>";
+     html += "<button type='submit'>Connect</button>";
+     html += "</form>";
+
+     html += "</div></body></html>";
+     return html;
    }
 
-   int getLedValue() {
-     return digitalRead(LED_PIN);
+   // ---------- HTML Control Page ----------
+   String controlHTMLPage() {
+     String html = "<!DOCTYPE html><html><head>";
+     html += "<title>ESP32 LED Control</title>";
+     html += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
+     html += "<style>"
+             "body { font-family: Arial, sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0; }"
+             "h2 { color: #333; margin-bottom: 20px; }"
+             "#ledIcon { width: 60px; height: 100px; margin: 20px auto; position: relative; }"
+             "#ledIcon .bulb { width: 60px; height: 60px; border-radius: 50%; background-color: #f44336; margin: 0 auto; transition: background-color 0.3s, box-shadow 0.3s; }"
+             "#ledIcon .base { width: 30px; height: 20px; background-color: #555; margin: -5px auto 0 auto; border-radius: 5px; }"
+             "#ledState { font-weight: bold; font-size: 1.5em; margin: 10px; }"
+             "button { padding: 15px 30px; font-size: 1.2em; border: none; border-radius: 8px; cursor: pointer; margin-bottom: 30px; }"
+             ".on { background-color: #4CAF50; color: white; }"
+             ".off { background-color: #f44336; color: white; }"
+             "</style></head><body>";
+
+     html += "<h2>ESP32 LED Control</h2>";
+     html += "<div id='ledIcon'><div class='bulb'></div><div class='base'></div></div>";
+     html += "<p>LED Status: <span id='ledState'>" + String(ledState ? "ON" : "OFF") + "</span></p>";
+     html += "<button id='ledButton' class='" + String(ledState ? "on" : "off") + "' onclick='toggleLED()'>Button</button>";
+
+     html += "<script>"
+             "function toggleLED(){fetch('/toggle').then(()=>updateState());}"
+             "function updateState(){fetch('/state').then(r=>r.text()).then(d=>{"
+             "var s=(d=='1');"
+             "document.getElementById('ledState').innerText=s?'ON':'OFF';"
+             "var b=document.getElementById('ledButton');b.className=s?'on':'off';"
+             "var bulb=document.querySelector('#ledIcon .bulb');"
+             "if(s){bulb.style.backgroundColor='#4CAF50';bulb.style.boxShadow='0 0 20px #4CAF50,0 0 40px #4CAF50';}"
+             "else{bulb.style.backgroundColor='#f44336';bulb.style.boxShadow='0 0 10px rgba(0,0,0,0.2)';}});}"
+             "setInterval(updateState,500);"
+             "</script></body></html>";
+     return html;
    }
 
-   // Validate command
-   bool isValidVoiceCommand(uint8_t command) {
-     return (command == VOICE_KEY_LED_ON || command == VOICE_KEY_LED_OFF);
+   // ---------- Setup Routes ----------
+   void setupRoutes() {
+     server.on("/", [](){
+       if (isConfigMode) server.send(200, "text/html", configHTMLPage());
+       else server.send(200, "text/html", controlHTMLPage());
+     });
+
+     server.on("/configure", HTTP_POST, [](){
+       wifiSSID = server.arg("ssid");
+       wifiPassword = server.arg("password");
+       preferences.putString("ssid", wifiSSID);
+       preferences.putString("password", wifiPassword);
+       server.send(200, "text/html",
+                   "<html><body><h2>Connecting...</h2><p>SSID:" + wifiSSID + "</p>"
+                   "<p>Restarting...</p><script>setTimeout(()=>{location.href='/'},3000);</script></body></html>");
+       delay(2000);
+       ESP.restart();
+     });
+
+     server.on("/toggle", [](){
+       ledState = !ledState;
+       server.send(200, "text/plain", ledState ? "1" : "0");
+     });
+
+     server.on("/state", [](){
+       server.send(200, "text/plain", ledState ? "1" : "0");
+     });
    }
 
-   // Process voice command
-   void processVoiceCommand(uint8_t keyword) {
-     if (keyword == VOICE_KEY_LED_ON) {
-       setLedValue(HIGH);
-       Serial.println("Voice Command: LED ON");
-     } else if (keyword == VOICE_KEY_LED_OFF) {
-       setLedValue(LOW);
-       Serial.println("Voice Command: LED OFF");
+   // ---------- WiFi Connection ----------
+   bool connectToWiFi() {
+     if (wifiSSID == "") return false;
+     WiFi.begin(wifiSSID.c_str(), wifiPassword.c_str());
+     int attempts = 0;
+     while (WiFi.status() != WL_CONNECTED && attempts < 20) {
+       delay(500);
+       Serial.print(".");
+       attempts++;
+     }
+     if (WiFi.status() == WL_CONNECTED) {
+       Serial.println("\nConnected!");
+       Serial.println("IP: " + WiFi.localIP().toString());
+       return true;
+     } else {
+       Serial.println("\nConnection failed");
+       return false;
      }
    }
 
-   // Voice protocol parser
-   void voiceSerialLoop() {
-     // Check timeout
-     if (voiceReceiving && millis() - lastVoiceByteTime > VOICE_TIMEOUT) {
-       voiceBufferIndex = 0;
-       voiceReceiving = false;
-     }
-     
-     while (VoiceSerial.available() > 0) {
-       uint8_t data = VoiceSerial.read();
-       lastVoiceByteTime = millis();
-       
-       if (!voiceReceiving) {
-         if (data == VOICE_HEADER) {
-           voiceReceiving = true;
-           voiceBufferIndex = 0;
-           voiceBuffer[voiceBufferIndex++] = data;
-         }
-         continue;
-       }
-       
-       if (voiceBufferIndex < VOICE_PACKET_LENGTH) {
-         voiceBuffer[voiceBufferIndex++] = data;
-         
-         if (voiceBufferIndex == VOICE_PACKET_LENGTH) {
-           if (voiceBuffer[0] == VOICE_HEADER && voiceBuffer[2] == VOICE_FOOTER) {
-             uint8_t keyword = voiceBuffer[1];
-             if (isValidVoiceCommand(keyword)) {
-               processVoiceCommand(keyword);
-             } else {
-               Serial.print("Invalid command: 0x");
-               Serial.println(keyword, HEX);
-             }
-           }
-           voiceReceiving = false;
-           voiceBufferIndex = 0;
-         }
-       } else {
-         voiceReceiving = false;
-         voiceBufferIndex = 0;
-       }
-     }
+   void setupAccessPoint() {
+     WiFi.softAP(apSSID, apPassword);
+     Serial.println("AP started");
+     Serial.println("IP: " + WiFi.softAPIP().toString());
    }
 
    void setup() {
      Serial.begin(115200);
-     VoiceSerial.begin(115200, SERIAL_8N1, VOICE_TX_PIN, VOICE_RX_PIN);
-     pinMode(LED_PIN, OUTPUT);
-     setLedValue(LOW);
-     Serial.println("Voice-controlled LED system started");
+     pinMode(ledPin, OUTPUT);
+     pinMode(buttonPin, INPUT_PULLUP);
+     preferences.begin("wifi-config", false);
+     wifiSSID = preferences.getString("ssid", "");
+     wifiPassword = preferences.getString("password", "");
+     if (wifiSSID != "" && connectToWiFi()) {
+       isConfigMode = false;
+       wifiConnected = true;
+     } else {
+       isConfigMode = true;
+       wifiConnected = false;
+       setupAccessPoint();
+     }
+     setupRoutes();
+     server.begin();
    }
 
    void loop() {
-     voiceSerialLoop();  // Handle voice commands
+     server.handleClient();
+     bool buttonState = digitalRead(buttonPin);
+     if (buttonState == LOW && lastButtonState == HIGH) {
+       ledState = !ledState;
+       delay(50);
+     }
+     lastButtonState = buttonState;
+     digitalWrite(ledPin, ledState ? HIGH : LOW);
    }
+
+----
+

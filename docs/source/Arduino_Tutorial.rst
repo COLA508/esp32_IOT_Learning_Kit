@@ -483,4 +483,3 @@ You can also download required libraries directly using the Arduino IDE.
    <div style="margin-top: 30px;"></div>
 
 ----
-
