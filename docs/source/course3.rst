@@ -1,5 +1,5 @@
-Course 2：IR_Display
-====================
+Course 3：Servo_Control
+=======================
 
 .. image:: _static/COURSE/7.servo.png
     :alt: Arduino IDE official website
@@ -10,7 +10,7 @@ Course 2：IR_Display
 Learning Objectives
 -------------------
 
-1. By controlling the rotation of the SG90 servo, one can master the basic working principle of servos and the PWM control method, and achieve precise control of the servo's rotation angle.
+ - By controlling the rotation of the SG90 servo, one can master the basic working principle of servos and the PWM control method, and achieve precise control of the servo's rotation angle.
 
 ----
 
@@ -52,7 +52,7 @@ Example Code
     int currentAngle = 0;  // Initial angle (power-on reset)
 
     // ===== WiFi Configuration =====
-    const char* apSSID = "Servo_Control";  // Access Point SSID (no password)
+    const char* apSSID = "Servo_Control";  // Access Point SSID 
     const char* apPassword = NULL;         // No password
 
     String wifiSSID = "";        // Store target WiFi SSID
