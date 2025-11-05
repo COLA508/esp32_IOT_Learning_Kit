@@ -22,7 +22,7 @@ All the necessary code and library files for this course are provided. You can o
 
 2. Each folder contains two files.
   - .ino files are used for programming with the Arduino IDE; 
-  - .bin files are used for programming with flash_download_tool.
+  - .bin files are used for programming with Flash Download Tool.
 
 .. image:: _static/65.code.png
    :width: 800
@@ -51,13 +51,25 @@ To ensure that the web control function works properly, please be sure to follow
    :width: 800
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 2. The ESP32 development board will generate a hotspot named after the title of each course; we'll use the first course as an example here.
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 3. Turn on your phone's Wi-Fi and find and connect to the hotspot name emitted by your device. Once connected, open your phone's browser and enter **192.168.4.1** in the address bar to access the network configuration interface. Then, enter your home Wi-Fi name and password to complete the device's network setup.
 
 .. image:: _static/67.wifi.png
    :width: 800
    :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 4. Open the serial monitor and wait for the device to connect successfully. The assigned IP address will then be displayed. Enter this IP address into your browser's address bar to open the device control page.
 
@@ -67,3 +79,15 @@ To ensure that the web control function works properly, please be sure to follow
 
 ----
 
+.. admonition:: Precaution
+   :class: note
+
+ The firmware burned using the Flash Download Tool can also have its IP address viewed through the Arduino IDE's serial monitor.
+
+ Please ensure that the WiFi network entered on the network configuration page is the same as the WiFi network your phone is connected to; otherwise, you will not be able to access the web control page through your browser.
+
+ The program has a built-in power-off memory function, so you usually only need to configure the network once. Afterwards, even if you power on the device again or flash a new program, it will automatically connect to the previously configured Wi-Fi. If you cannot connect normally, please repeat the network configuration steps above.
+ 
+ The device's IP address may change each time it connects to WiFi. If you cannot access the control page after connecting to WiFi, please open the serial monitor in the Arduino IDE and press the reset button on the ESP32 development board. After resetting, the serial port will output a new IP address. Please enter this new address in your browser to access the control page.
+
+----
