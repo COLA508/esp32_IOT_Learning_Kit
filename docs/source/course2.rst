@@ -10,7 +10,7 @@ Course 2：IR_Display
 Learning Objectives
 -------------------
 
-1. Understand the principles of infrared remote control signal reception and decoding （NEC protocol）.
+1. Understand the principles of infrared remote control signal reception and decoding（NEC protocol）.
 
 2. Implement an interactive effect that displays the infrared button values ​​in real time on a webpage.
 
@@ -38,6 +38,7 @@ Wiring
 
 Example Code
 ------------
+
 .. code-block:: cpp
 
    #include <WiFi.h>
@@ -342,9 +343,12 @@ Example Code
 ----
 
 **Code burning options**
- 1. You can directly copy the code provided above into the Arduino IDE for burning.
- 2. Find the **2.IR_Display.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- 3. Find the **2.IR_Display.bin** file in the provided folder, download it and use Flash Download Tool to flash the program to the ESP32 development board. 
+
+1. You can directly copy the code provided above into the Arduino IDE for burning.
+
+2. Find the **2.IR_Display.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+
+3. Find the **2.IR_Display.bin** file in the provided folder, download it and use Flash Download Tool to flash the program to the ESP32 development board. 
 
 ----
 
