@@ -288,3 +288,6 @@ Example Code
 
 
 ----
+
+Effects Demonstration
+---------------------
