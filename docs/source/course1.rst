@@ -300,7 +300,7 @@ Effects Demonstration
 
    The webpage button and the physical button achieve synchronized control; operation on either will update the other's status in real time, enabling two-way linkage.
 
-.. image:: _static/COURSE/2.ledwiring.png
+.. image:: _static/COURSE/3.LED.png
     :alt: Arduino IDE official website
     :align: center
 
