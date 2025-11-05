@@ -293,9 +293,9 @@ Example Code
 
 1. You can directly copy the code provided above into the Arduino IDE for burning.
 
-2. Find the **1.Button_LED.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+2. Find the **1.Button_LED.ino** file in the provided folder, download it, open it with the **Arduino IDE**, and burn the program to the ESP32 development board.
 
-3. Find the **1.Button_LED.bin** file in the provided folder, download it and use Flash Download Tool to flash the program to the ESP32 development board. 
+3. Find the **1.Button_LED.bin** file in the provided folder, download it and use **Flash Download Tool** to flash the program to the ESP32 development board. 
 
 ----
 
