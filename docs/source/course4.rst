@@ -537,7 +537,7 @@ Effects Demonstration
 2. Gear shifting can be controlled via a web page.
 
 .. image:: _static/COURSE/13.fan.png
-   :width: 600
+   :width: 800
    :align: center
 
 ----
