@@ -531,13 +531,13 @@ Effects Demonstration
 1. The fan's operation can be controlled via an infrared remote control. Press the **OK** button to turn the fan on or off. Press the **1, 2, or 3** buttons to switch between fan speed levels, with the airflow increasing sequentially.
 
 .. image:: _static/COURSE/12.fan.png
-   :width: 800
+   :width: 600
    :align: center
 
 2. Gear shifting can be controlled via a web page.
 
-.. image:: _static/COURSE/9.servo.png
-   :width: 800
+.. image:: _static/COURSE/13.fan.png
+   :width: 600
    :align: center
 
 ----
