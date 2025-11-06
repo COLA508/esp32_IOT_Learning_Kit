@@ -37,7 +37,7 @@ Wiring
  - Motor Fan Module —— ESP32 IO27
  - DHT11 Senor —— ESP32 IO15
 
-.. image:: _static/COURSE/15.TEMP.png
+.. image:: _static/COURSE/15.TEMP1.png
   :align: center
 
 ----
@@ -495,7 +495,7 @@ Effects Demonstration
 
 3. New temperature thresholds can be set via the webpage.
 
-.. image:: _static/COURSE/13.fan.png
+.. image:: _static/COURSE/16.TEMP.png
    :width: 800
    :align: center
 
