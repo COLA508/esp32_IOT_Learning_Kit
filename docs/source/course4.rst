@@ -528,13 +528,33 @@ Example Code
 Effects Demonstration
 ---------------------
 
-1. The fan's operation can be controlled via an infrared remote control. Press the **OK** button to turn the fan on or off. Press the **1, 2, or 3** buttons to switch between fan speed levels, with the airflow increasing sequentially.
+1. Fan control function:
+
+.. code-block:: cpp
+
+  void setFanLevel(int level, bool on = true){
+  fanOn = on;
+  fanLevel = (fanOn) ? level : 0;
+  int duty = 0;
+  if(fanOn){
+    switch(fanLevel){
+      case 1: duty = 85; break;
+      case 2: duty = 170; break;
+      case 3: duty = 255; break;
+    }
+  }
+  analogWrite(FAN_PIN, duty);
+}
+
+*When fanOn is true, different PWM duty cycles are set according to the gear; speed control is simulated through analogWrite(); gears 1~3 correspond to low, medium and high speed.*
+
+2. The fan's operation can be controlled via an infrared remote control. Press the **OK** button to turn the fan on or off. Press the **1, 2, or 3** buttons to switch between fan speed levels, with the airflow increasing sequentially.
 
 .. image:: _static/COURSE/12.fan.png
    :width: 600
    :align: center
 
-2. Gear shifting can be controlled via a web page.
+3. Gear shifting can be controlled via a web page.
 
 .. image:: _static/COURSE/13.fan.png
    :width: 800
