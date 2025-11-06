@@ -380,9 +380,9 @@ Effects Demonstration
 
 1. The PIR sensor is used to detect human activity. A buzzer sounds when someone is detected passing by.
 
-2. The web interface includes a people counter, displaying the total number of detected people in real time and providing a "reset" button to reset the count.
+2. The web interface includes a people counter, displaying the total number of detected people in real time and providing a "Reset Counter" button to reset the count.
 
-.. image:: _static/COURSE/16.TEMP.png
+.. image:: _static/COURSE/19.human.png
    :width: 800
    :align: center
 
