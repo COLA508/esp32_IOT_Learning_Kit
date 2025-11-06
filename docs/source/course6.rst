@@ -1,7 +1,7 @@
 Course 6：Human_Count
 =====================
 
-.. image:: _static/COURSE17.human.png
+.. image:: _static/COURSE/17.human.png
     :align: center
 
 ----
