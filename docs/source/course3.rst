@@ -25,6 +25,8 @@ Working Principle
  - The SG90 servo receives PWM pulse width signals from the controller and uses internal potentiometer feedback to achieve closed-loop control of the motor, thereby precisely adjusting and maintaining a specified angle.
  - The ESP32 sends a PWM signal with a period of approximately 20ms（50Hz）to the servo motor.The pulse width（high-level time）determines the servo motor's rotation angle: 0.5ms - 0 degrees, 1.5ms - 90 degrees, 2.5ms - 180 degrees.
 
+----
+
 Wiring
 --------
 

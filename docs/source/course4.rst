@@ -26,6 +26,8 @@ Working Principle
  - When voltage is applied across the motor, current flows through the stator coils, generating a magnetic field. This magnetic field, in turn, creates an electromagnetic torque between the rotor's permanent magnets, driving the rotor to rotate. The rotor's rotation then drives the fan blades, creating airflow.
  - The fan generates airflow by rotating a DC motor under the action of electromagnetic force. The motor speed can be controlled by adjusting the duty cycle of the PWM signal, thereby achieving wind speed regulation.
 
+----
+
 Wiring
 --------
 

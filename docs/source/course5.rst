@@ -31,6 +31,8 @@ Working Principle
 
  - The 40-bit data（5 bytes in total）consists of: an integer part of humidity, a decimal part of humidity, an integer part of temperature, a decimal part of temperature, and a checksum (the lower 8 bits of the sum of the first four bytes).
 
+----
+
 Wiring
 --------
 
