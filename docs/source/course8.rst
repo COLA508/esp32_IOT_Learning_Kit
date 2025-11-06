@@ -1,4 +1,4 @@
-Course 6：RFID_Door
+Course 8：RFID_Door
 =====================
 
 .. image:: _static/COURSE/23.RFID.png
@@ -463,7 +463,7 @@ Effects Demonstration
 
 2. The web interface will display the read card number information in real time, and manual door opening and closing can be achieved through control buttons on the webpage.
 
-.. image:: _static/COURSE/22.LCD.png
+.. image:: _static/COURSE/25.rfid.png
    :width: 800
    :align: center
 
