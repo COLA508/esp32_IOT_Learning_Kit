@@ -6,6 +6,8 @@
 
 **ESP32 IoT Learning Kit**
 
+此处插入一段展示视频
+
 ----
 
 Introduction
