@@ -19,6 +19,8 @@ Required Component
 
  - SG90 Servo
 
+----
+
 Working Principle
 -----------------
 

@@ -20,6 +20,8 @@ Required Component
 
  - Motor Fan Module、IR Receiver Module
 
+----
+
 Working Principle
 -----------------
 

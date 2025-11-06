@@ -22,6 +22,8 @@ Required Component
 
  - Active Buzzer、PIR Senor
 
+----
+
 Working Principle
 -----------------
 

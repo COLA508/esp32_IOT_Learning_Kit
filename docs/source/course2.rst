@@ -21,6 +21,8 @@ Required Component
 
  - IR Receiver Module、Infrared Remote Control
 
+----
+
 Working Principle
 -----------------
 
