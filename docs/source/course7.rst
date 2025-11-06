@@ -394,7 +394,7 @@ Effects Demonstration
 
 2. Each line can contain a maximum of 16 characters（including spaces）, and any lines exceeding this limit will be automatically truncated.
 
-.. image:: _static/COURSE/19.human.png
+.. image:: _static/COURSE/22.LCD.png
    :width: 800
    :align: center
 
