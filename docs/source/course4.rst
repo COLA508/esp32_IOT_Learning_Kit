@@ -1,4 +1,4 @@
-Course 3：Fan_Control
+Course 4：Fan_Control
 =======================
 
 .. image:: _static/COURSE/10.fan.png
