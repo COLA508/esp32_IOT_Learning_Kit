@@ -473,7 +473,7 @@ Effects Demonstration
 
 1. The web control page includes: a power button（to turn the RGB lights on and off）, an RGB slider（to adjust the color）, a color preview area, and a status display（ON / OFF）.
 
-.. image:: _static/COURSE/25.rfid.png
+.. image:: _static/COURSE/28.rgb.png
    :width: 800
    :align: center
 
