@@ -4,7 +4,7 @@
 
 ----
 
-**ESP32 IoT Learning Kit**
+**ESP32 IOT Learning Kit**
 
 此处插入一段展示视频
 
