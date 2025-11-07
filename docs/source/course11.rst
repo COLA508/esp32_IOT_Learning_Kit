@@ -1385,9 +1385,35 @@ Example Code
 Effects Demonstration
 ---------------------
 
-1. The web interface displays temperature, brightness, and raindrop values ​​in real time.
+ - 📊 Visualized Environmental Monitoring
+Real-time display of temperature, humidity, light intensity, and rainfall data, providing a clear overview of environmental conditions.
 
-.. image:: _static/COURSE/31.env.png
+ - 🎛️ Intelligent Equipment Control
+
+Remote control of fans, LED lights, and door lock status.
+
+Supports customizable temperature thresholds for automatic fan start/stop.
+
+ - 🚨 Security Alarm System
+
+Human movement detection automatically triggers a buzzer alarm.
+
+Infrared remote control with the # key to deactivate the alarm.
+
+ - 🔐 Intelligent Access Control
+RFID card swipe unlocks doors; the system automatically records the card number.
+
+ - 📟 Multifunctional Display Screen
+The LCD1602 displays environmental sensor data in a default loop; user-defined display content is also supported.
+
+ - 🌈 Vibrant Lighting Effects
+RGB light strip supports infrared remote control:
+
+OK key: Turn lights on/off
+
+Number keys 1-4: Switch between four vibrant dynamic modes (solid color/breathing/chasing/flame).
+
+.. image:: _static/COURSE/34.com.png
    :width: 800
    :align: center
 
