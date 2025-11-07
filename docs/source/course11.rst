@@ -4,7 +4,7 @@ Course 11：Smart_Home
 .. image:: _static/COURSE/32.com.png
     :align: center
 
- - In this course, we will comprehensively utilize the various sensor modules we have learned previously to conduct a practical project. Sensor modules offer a wealth of combination possibilities, allowing for a variety of interesting application solutions. This course will focus on the theme of **Smart Home** ， designing and implementing a lively and engaging interactive experience.
+- In this course, we will comprehensively utilize the various sensor modules we have learned previously to conduct a practical project. Sensor modules offer a wealth of combination possibilities, allowing for a variety of interesting application solutions. This course will focus on the theme of **Smart Home** ， designing and implementing a lively and engaging interactive experience.
 
 ----
 
