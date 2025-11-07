@@ -9,6 +9,7 @@ ESP32 IOT Learning Kit
    Arduino_Tutorial
    Upload_code_to_ESP32
    Pre-classpreparation
+   FrequentlyAskedQuestions
 
 .. toctree::
    :maxdepth: 1

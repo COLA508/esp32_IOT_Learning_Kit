@@ -38,6 +38,8 @@ All the necessary code and library files for this course are provided. You can o
 
 ----
 
+.. _Configure network:
+
 Configure network
 -----------------
 
