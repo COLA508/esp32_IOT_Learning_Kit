@@ -23,3 +23,4 @@ ESP32 IOT Learning Kit
    course7
    course8
    course9
+   course10

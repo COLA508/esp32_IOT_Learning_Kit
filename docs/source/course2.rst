@@ -26,7 +26,8 @@ Required Component
 Working Principle
 -----------------
 
- - When a button on the remote control is pressed, the infrared LED emits 38 kHz modulated infrared light, carrying a code representing the button press （such as the NEC protocol）. The receiver is sensitive to 38 kHz infrared light and converts the optical signal into an electrical signal. The MCU （such as ESP32） samples the pulse signal and deciphers the button press value.
+ - When a button on the remote control is pressed, the infrared LED emits 38 kHz modulated infrared light, carrying a code representing the button press （such as the NEC protocol）. 
+ - The receiver is sensitive to 38 kHz infrared light and converts the optical signal into an electrical signal. The MCU （such as ESP32） samples the pulse signal and deciphers the button press value.
 
 ----
 
