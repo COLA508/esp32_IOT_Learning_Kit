@@ -1,4 +1,4 @@
-Pre-class preparation
+Pre-Class Preparation
 =====================
 
 Check Resources
