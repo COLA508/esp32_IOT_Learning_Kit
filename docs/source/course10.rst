@@ -404,7 +404,7 @@ Effects Demonstration
 
 1. The web interface displays temperature, brightness, and raindrop values ​​in real time.
 
-.. image:: _static/COURSE/25.rfid.png
+.. image:: _static/COURSE/31.env.png
    :width: 800
    :align: center
 
