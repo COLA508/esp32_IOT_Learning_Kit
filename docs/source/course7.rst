@@ -1,4 +1,4 @@
-Course 6：LCD_Display
+Course 7：LCD_Display
 =====================
 
 .. image:: _static/COURSE/20.LCD.png
