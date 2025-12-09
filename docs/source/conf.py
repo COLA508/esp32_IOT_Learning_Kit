@@ -29,7 +29,7 @@ copybutton_icon = "📋"       # 复制按钮图标，可改为其他符号
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_rtd_theme'
 
-# 指定 logo 图片（放在 docs/_static/Logo2.png）
+
 html_logo = "_static/logo.png"
 
 # 静态资源目录（必须保留 _static）
