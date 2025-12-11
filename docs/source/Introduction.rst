@@ -131,7 +131,7 @@ Resource Download
 
 All the necessary code and library files for this course are provided. You can obtain all the resources through the following link.
 
-`Code and Libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
+`Code and Libraries <https://www.dropbox.com/scl/fo/sl9z0sjm05r91bp1ydpow/ADg7koIZM07COmi8Y_GyPWE?rlkey=odmym388yz5bqwd5xhbzzn2zi&st=4w7j8l23&dl=1>`_
 
 `Flash Download Tool <https://www.dropbox.com/scl/fo/r81afjixw65y88jikwxno/AM8XTGDtfcEJDgN0jHyMbRY?rlkey=4lvaoh0axd9nhvk9al7qukoi5&st=1hqtehms&dl=1>`_
 
