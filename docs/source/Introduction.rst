@@ -6,7 +6,9 @@
 
 **ESP32 IOT Learning Kit**
 
-此处插入一段展示视频
+.. image:: _static/1-1/2.introduct.png
+   :width: 800
+   :align: center
 
 ----
 
@@ -130,6 +132,10 @@ Resource Download
 All the necessary code and library files for this course are provided. You can obtain all the resources through the following link.
 
 `Code and Libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
+
+`Flash Download Tool <https://www.dropbox.com/scl/fo/r81afjixw65y88jikwxno/AM8XTGDtfcEJDgN0jHyMbRY?rlkey=4lvaoh0axd9nhvk9al7qukoi5&st=1hqtehms&dl=1>`_
+
+`CH340 <https://www.dropbox.com/scl/fo/c4bb59fr42qcs9cxgexan/AIMImtqevecMqYNMJVK1ZBM?rlkey=9afntuwy2usxfxbl7xjkoirsy&st=89a5bx6b&dl=1>`_
 
 ----
 
